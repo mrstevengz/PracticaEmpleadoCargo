@@ -19,7 +19,7 @@ public class Empleado {
     private String apellido;
 
     @ManyToOne
-    @JoinColumn(name = "nombre_cargo", nullable = false)
+    @JoinColumn(name = "nombre_cargo")
     private Cargo cargo;
 
     @Override

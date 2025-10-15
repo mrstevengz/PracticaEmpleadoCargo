@@ -26,8 +26,7 @@ public class EmpleadoDAO implements IEmpleado {
 
     @Override
     public List<Empleado> listar() {
-        List<Empleado> lista = em.createQuery("from Empleado", Empleado.class).getResultList();
-        return lista;
+        return em.createQuery("from Empleado", Empleado.class).getResultList();
     }
 
     @Override

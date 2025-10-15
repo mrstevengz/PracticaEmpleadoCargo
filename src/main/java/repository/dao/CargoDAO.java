@@ -25,8 +25,7 @@ public class CargoDAO implements ICargo {
 
     @Override
     public List<Cargo> listarCargo() {
-        List<Cargo> listacargo = em.createQuery("from Cargo", Cargo.class).getResultList();
-        return listacargo;
+        return em.createQuery("from Cargo", Cargo.class).getResultList();
     }
 
     @Override
